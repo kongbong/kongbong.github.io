@@ -49,18 +49,18 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-4 col-md-3 sidebar">
-		  <div class="label label-info">E-Mail</div>
+		  <h4>E-Mail</h4>
           <ul>
             <li class="li-content">kongbong23@gmail.com</li>
           </ul>
           <br>
-		  <div class="label label-important">Repository</div>
+		  <h4>Repository</h4>
           <ul>
-            <li class="li-content"><a href="https://github.com/kongbong">Github: https://github.com/kongbong</a></li>
-            <li class="li-content"><a href="http://www.slideshare.net/kongbong/">Slideshare: http://www.slideshare.net/kongbong/</a></li>
+            <li class="li-content"><a href="https://github.com/kongbong">Github<br/> https://github.com/kongbong</a></li>
+            <li class="li-content"><a href="http://www.slideshare.net/kongbong/">Slideshare<br/> http://www.slideshare.net/kongbong/</a></li>
           </ul>
           <br>
-		  <div class="label label-warning">Skills</div>
+		  <h4>Skills</h4>
           <ul>
             <li class="li-content">C++</li>
 			<li class="li-content">C#</li>
@@ -72,43 +72,47 @@
 			<li class="li-content">Mongo DB</li>			
           </ul>
           <br>
-		  <div class="label label-inverse">Hobby</div>
+		  <h4>Interests</h4>
           <ul>
-            <li class="li-content">Boardgame (like catan), Camping, Hiking</li>
+			<li class="li-content">Boardgame</li>		
+			<li class="li-content">Camping</li>		
+            <li class="li-content">Hiking</li>
           </ul>
-          <br>
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
-          </ul>
+          <br>          
         </div>
         <div class="col-sm-8 col-sm-offset-4 col-md-9 col-md-offset-3 main">
-          <h1 class="page-header">Dashboard</h1>
+          <h1 class="page-header">Work Experience</h1>
 
-          <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-          </div>
+            <div id="timelineContainer">
+
+                <div class="timelineToggle"><p><a class="expandAll">+ expand all</a></p></div>
+                <br class="clear">
+
+                <!-- 2014-->
+                <div class="timelineMajor">
+                    <h2 class="timelineMajorMarker"><span>2015</span></h2>
+
+                    <dl class="timelineMinor">
+                        <dt id="2015"><a>Personal Project</a></dt>
+                        <dd class="timelineEvent" id="2015EX" style="display:none;">
+                            <h3>Apr 04. 2015 ~ </h3>
+                            <div class="media">
+                                <a href="images/wsc.png" class="CBmodal cboxElement"></a>
+                            </div><!-- /.media -->
+                            <p><a href="https://github.com/kongbong/fourtierchatserver">Chat server with Four tier</a><br>
+                                    <a href="https://github.com/kongbong/fourtierchatserver">- Github</a><br>
+                                    - Robust chat server<br>
+									- Skeleton code for MMO Server using node.js
+                                    - using Node.js, Redis, Mongo DB<br>                                    
+                                    <br>
+                            </p>
+                            <br class="clear">
+                        </dd><!-- /.timelineEvent -->
+                    </dl><!-- /.timelineMinor -->
+
+                </div><!-- /.timelineMajor -->
+                <br class="clear">
+            </div><!-- /#timelineContainer -->
 
           <h2 class="sub-header">Section title</h2>
           <div class="table-responsive">
@@ -251,5 +255,11 @@
     <script src="js/vendor/holder.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+	<script src="js/timeliner.min.js"></script>  <!-- http://www.technotarek.com/timeliner/  https://github.com/technotarek/timeliner -->
+	    <script>
+            $(document).ready(function() {
+                    $.timeliner({});
+            });
+    </script>
   </body>
 </html>
