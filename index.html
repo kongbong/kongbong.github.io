@@ -1,281 +1,180 @@
 ﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <!-- AppMode on mobile safari -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="description" content="Bongsik Kong">
-    <meta name="author" content="kongbong23@gmail.com">
-
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bongsik Kong</title>
-
-    <!-- Browser favicon -->
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-    <!-- IPhone home page bookmark icon creation -->
-    <link href="favicon.ico" rel="apple-touch-icon"/>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
-    <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/colorbox.css" type="text/css" media="screen">
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
     <![endif]-->
-
-</head>
-
-<body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" onclick="onBrand()">Bongsik Kong</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <!-- li class="active"><a href="#">Home</a></li-->              
-              <li class="li-content"><a href="https://github.com/kongbong">Github</a></li>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="photo-header" class="text-center">
+            <!-- PHOTO (AVATAR) -->
+            <div id="photo">
+              <img src="images/kongbong.png" alt="avatar">
+            </div>
+            <div id="text-header">
+              <h1>Hello,<br> my name is <span>Bongsik</span> and this is my resume/cv</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-7">
+          <!-- ABOUT ME -->
+          <div class="box">
+            <h2>About Me</h2>
+            <p>어쩌고 저쩌고...</p>
+          </div>
+		  <!-- EXPERIENCES -->
+          <div class="box">
+            <h2>Experiences</h2>
+            <div class="job clearfix">
+              <div class="col-xs-3">
+                <div class="where">Neowiz Games</div>
+                <div class="year">2010 - current</div>
+              </div>
+              <div class="col-xs-9">
+                <div class="profession">Bless project / server side lead programmer</div>
+                <div class="description">어쩌고 저쩌고..</div>
+              </div>
+            </div>
+            <div class="job clearfix">
+              <div class="col-xs-3">
+                <div class="where">Nexon</div>
+                <div class="year">2008 - 2010</div>
+              </div>
+              <div class="col-xs-9">
+                <div class="profession">Mabinogi project / game play programmer</div>
+                <div class="description">이렇쿵 저렇쿵</div>
+              </div>
+            </div>
+			<div class="job clearfix">
+              <div class="col-xs-3">
+                <div class="where">Ndoors</div>
+                <div class="year">2007 - 2008</div>
+              </div>
+              <div class="col-xs-9">
+                <div class="profession">Koongpa project / back-end programmer</div>
+                <div class="description">이렇쿵 저렇쿵</div>
+              </div>
+            </div>			
+          </div>
+          <!-- EDUCATION -->
+          <div class="box">
+            <h2>Education</h2>
+            <ul id="education" class="clearfix">
+              <li>
+                <div class="year pull-left">1979</div>
+                <div class="description pull-right">
+                  <h3>I was born in Korea</h3>
+                  <p>어절시구.. 절시구..</p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">1998</div>
+                <div class="description pull-right">
+                  <h3>Bachelor of Engineering in Electronic</h3>
+                  <p>Konkuk university.<br><b>Graduation portfolio</b>: Camera device using serialport<br>
+                  using techniques: C, C++, x8086, MFC, CMOS, OrCad</p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">2004</div>
+                <div class="description pull-right">
+                  <h3>Master degree of Game design</h3>
+                  <p>Sangmyung university.<br/><b>Graduation paper</b>: A Study on the Requirements of Long-term Playable Strategy Game<br>
+				  <b>other papers</b>: Development of Composition Elements Using AHP On Game Contents<br>
+				  A Study on Game Experience Cycle Using AHP</p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">2006</div>
+                <div class="description pull-right">
+                  <h3>Studied in Ssangyoung IT institute</h3>
+                  <p>Leared about C# for 6 months.<br><b>Graduation project</b>: Knowledge management system using C# and MySQL</p>
+                </div>
+              </li>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+          <!-- CONTACT -->
+          <div class="box clearfix">
+            <h2>Contact</h2>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
+              <div class="title only pull-right">8210 4462 4201</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
+              <div class="title only pull-right">kongbong23@gmail.com</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-github fa-fw"></span></div>
+              <div class="title pull-right">GitHub</div>
+              <div class="description pull-right">https://github.com/kongbong</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-slideshare fa-fw"></span></div>
+              <div class="title pull-right">SlideShare</div>
+              <div class="description pull-right">http://www.slideshare.net/kongbong</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-skype fa-fw"></span></div>
+              <div class="title pull-right">Skype</div>
+              <div class="description pull-right">kongbong23@gmail.com</div>
+            </div>
+          </div>
+          <!-- SKILLS -->
+          <div class="box">
+            <h2>Skills</h2>
+            <div class="skills">
+              <div class="item-skills" data-percent="1.00">C++</div>
+              <div class="item-skills" data-percent="0.90">C#</div>
+              <div class="item-skills" data-percent="0.80">C</div>
+              <div class="item-skills" data-percent="0.75">MSSQL</div>
+              <div class="item-skills" data-percent="0.50">Node.js</div>
+			  <div class="item-skills" data-percent="0.25">Python</div>
+			  <div class="item-skills" data-percent="0.25">Ruby</div>
+              <div class="skills-legend clearfix">
+                <div class="legend-left legend">Beginner</div>
+                <div class="legend-left legend"><span>Proficient</span></div>
+                <div class="legend-right legend"><span>Expert</span></div>
+                <div class="legend-right legend">Master</div>
+              </div>
+            </div>
+          </div>
+          <!-- LANGUAGES -->
+          <div class="box">
+            <h2>Languages</h2>
+            <div id="language-skills">              
+              <div class="skill">English <div class="icons pull-right"><div style="width: 60%;" class="icons-red"></div></div></div>
+            </div>
+          </div>
+          <!-- HOBBIES -->
+          <div class="box">
+            <h2>Hobbies</h2>
+            <div class="hobby">Boardgame</div>
+            <div class="hobby">Camping</div>            
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="container">
-        <div class="label label-info">E-Mail</div>
-        <ul>
-            <li class="li-content">kongbong23@gmail.com</li>
-        </ul>
-        <br>
-
-        <div class="label label-important">Repository</div>
-        <ul>
-            <li class="li-content"><a href="https://github.com/kongbong">Github: https://github.com/kongbong</a></li>
-            <li class="li-content"><a href="http://www.slideshare.net/kongbong/">Slideshare: http://www.slideshare.net/kongbong/</a></li>
-        </ul>
-        <br>
-
-        <div class="label label-warning">Interests</div>
-        <ul>
-            <li class="li-content">C++ (Excellent)</li>
-			<li class="li-content">C# (Excellent)</li>
-			<li class="li-content">MSSQL (Good, using as Main DB)</li>
-			<li class="li-content">Ruby (Protocol code generator tool)</li>
-			<li class="li-content">Node.js (Personal work)</li>
-			<li class="li-content">Python (Personal work)</li>
-			<li class="li-content">Redis (Personal work)</li>
-			<li class="li-content">Mongo DB (Personal work)</li>			
-        </ul>
-        <br>
-
-        <div class="label label-inverse">Hobby</div>
-        <ul>
-            <li class="li-content">Boardgame (like catan), Camping, Hiking</li>
-        </ul>
-        <br>
-
-        <div class="label">Career</div>
-        <div class="container">
-            <div id="timelineContainer">
-
-                <div class="timelineToggle"><p><a class="expandAll">+ expand all</a></p></div>
-                <br class="clear">
-
-                <!-- 2014-->
-                <div class="timelineMajor">
-                    <h2 class="timelineMajorMarker"><span>2015</span></h2>
-
-                    <dl class="timelineMinor">
-                        <dt id="2015"><a>Personal Project</a></dt>
-                        <dd class="timelineEvent" id="2015EX" style="display:none;">
-                            <h3>Apr 04. 2015 ~ </h3>
-                            <div class="media">
-                                <a href="images/wsc.png" class="CBmodal cboxElement"></a>
-                            </div><!-- /.media -->
-                            <p><a href="https://github.com/kongbong/fourtierchatserver">Chat server with Four tier</a><br>
-                                    <a href="https://github.com/kongbong/fourtierchatserver">- Github</a><br>
-                                    - Robust chat server<br>
-									- Skeleton code for MMO Server using node.js
-                                    - using Node.js, Redis, Mongo DB<br>                                    
-                                    <br>
-                            </p>
-                            <br class="clear">
-                        </dd><!-- /.timelineEvent -->
-                    </dl><!-- /.timelineMinor -->
-
-                </div><!-- /.timelineMajor -->
-
-                <!-- 2013-->
-                <div class="timelineMajor">
-                    <h2 class="timelineMajorMarker"><span>2013</span></h2>
-
-                    <dl class="timelineMinor">
-                        <dt id="2013Doc"><a>Document</a></dt>
-                        <dd class="timelineEvent" id="2013DocEX" style="display:none;">
-                            <h3><a href="http://www.slideshare.net/kongbong/tdd-in-gameserver">TDD in Game Server</a><br></h3>
-                            <br class="clear">
-                        </dd><!-- /.timelineEvent -->
-                    </dl><!-- /.timelineMinor -->
-                </div><!-- /.timelineMajor -->
-
-                <!-- 2012-->
-                <div class="timelineMajor">
-                    <h2 class="timelineMajorMarker"><span>2012</span></h2>
-					
-					<dl class="timelineMinor">
-                        <dt id="2012Doc"><a>Document</a></dt>
-                        <dd class="timelineEvent" id="2012DocEX" style="display:none;">
-                            <h3><a href="http://www.slideshare.net/kongbong/hadoop-15513713">Hadoop</a><br></h3>
-                            <br class="clear">
-                        </dd><!-- /.timelineEvent -->
-                    </dl><!-- /.timelineMinor -->
-                </div><!-- /.timelineMajor -->
-				
-				 <!-- 2011-->
-                <div class="timelineMajor">
-                    <h2 class="timelineMajorMarker"><span>2011</span></h2>
-					
-					<dl class="timelineMinor">
-                        <dt id="2011Doc"><a>Document</a></dt>
-                        <dd class="timelineEvent" id="2011DocEX" style="display:none;">
-                            <h3><a href="http://www.slideshare.net/kongbong/lambda-43808189">What is lambda</a><br></h3>
-                            <br class="clear">
-                        </dd><!-- /.timelineEvent -->
-                    </dl><!-- /.timelineMinor -->
-                </div><!-- /.timelineMajor -->
-				
-				 <!-- 2010-->
-                <div class="timelineMajor">
-                    <h2 class="timelineMajorMarker"><span>2010</span></h2>
-					
-					<dl class="timelineMinor">
-                        <dt id="2010Doc"><a>Document</a></dt>
-                        <dd class="timelineEvent" id="2010DocEX" style="display:none;">
-                            <h3><a href="http://www.slideshare.net/kongbong/db-3728581">Game Server using Berkeley DB</a><br></h3>
-                            <br class="clear">
-                        </dd><!-- /.timelineEvent -->
-                    </dl><!-- /.timelineMinor -->
-                </div><!-- /.timelineMajor -->
-				
-								
-				<div class="timelineMajor">
-                    <h2 class="timelineMajorMarker"><span>2005</span></h2>
-
-                    <dl class="timelineMinor">
-                        <dt id="2005"><a>University (For Master Degree)</a></dt>
-                        <dd class="timelineEvent" id="2005EX" style="display:none;">
-                            <h3>2005 ~ 2007</h3>
-                            <div class="media">
-                                <a href="images/smu.jpg" class="CBmodal cboxElement"><img src="images/smu.jpg" width="240" height="180" alt="Sangmyung university"></a>                                
-                            </div><!-- /.media -->
-                            <p>Sangmyung University<br>
-                                    - Master of Game design.<br>
-                            <br>
-                                    Graduation paper:<br>
-                                    - A Study on the Requirements of Long-term Playable Strategy Game<br>
-									<br>
-									Papers :<br>
-									- Development of Composition Elements Using AHP On Game Contents<br>
-									- A Study on Game Experience Cycle Using AHP<br>
-							<br>
-                            </p>
-                            <br class="clear">
-                        </dd><!-- /.timelineEvent -->
-                    </dl><!-- /.timelineMinor -->
-                </div><!-- /.timelineMajor -->
-				
-                <div class="timelineMajor">
-                    <h2 class="timelineMajorMarker"><span>1998</span></h2>
-
-                    <dl class="timelineMinor">
-                        <dt id="1998"><a>University</a></dt>
-                        <dd class="timelineEvent" id="1998EX" style="display:none;">
-                            <h3>1998 ~ 2005</h3>
-                            <div class="media">
-                                <a href="images/konkuk.jpg" class="CBmodal cboxElement"><img src="images/konkuk.jpg" width="240" height="180" alt="Konkuk university"></a>                                
-                            </div><!-- /.media -->
-                            <p>KonKuk University<br>
-                                    - Bachelor of Engineering in Electroic.<br>
-                            <br>
-                                    Graduation portfolio:<br>
-                                    - Web cam.<br>
-                                    - Technique: C, C++, Asembly, x8086, MFC, CMOS, OrCad <br>
-                            </p>
-                            <br class="clear">
-                        </dd><!-- /.timelineEvent -->
-                    </dl><!-- /.timelineMinor -->
-                </div><!-- /.timelineMajor -->
-
-                <br class="clear">
-            </div><!-- /#timelineContainer -->
-        </div><!-- /.container -->
-    </div>
-
-    <!-- modal-gallery is the modal dialog used for the image gallery -->
-    <div id="modal-gallery" class="modal modal-gallery hide fade" tabindex="-1">
-        <div class="modal-header">
-            <a class="close" data-dismiss="modal">&times;</a>
-            <h3 class="modal-title"></h3>
-        </div>
-        <div class="modal-body"><div class="modal-image"></div></div>
-        <div class="modal-footer">
-            <a class="btn modal-download" target="_blank">
-                <i class="icon-download"></i>
-                <span>Download</span>
-            </a>
-            <a class="btn btn-success modal-play modal-slideshow" data-slideshow="2000">
-                <i class="icon-play icon-white"></i>
-                <span>Slideshow</span>
-            </a>
-            <a class="btn btn-info modal-prev">
-                <i class="icon-arrow-left icon-white"></i>
-                <span>Previous</span>
-            </a>
-            <a class="btn btn-primary modal-next">
-                <span>Next</span>
-                <i class="icon-arrow-right icon-white"></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- Hidden Element -->
-    <div id="myModal" class="modal hide fade">
-        <div class="modal-header">
-            <h3>My son</h3>
-        </div>
-        <div class="modal-body">
-            <img src="images/son.jpg" width="300">
-        </div>
-    </div>
-
-
-    <!--Loading -->
-    <script src="js/jquery-1.7.1.min.js"></script>  <!-- http://jquery.com/ -->
-    <script src="js/bootstrap.min.js"></script>  <!-- http://twitter.github.com/bootstrap/index.html -->
-    <script src="js/load-image.min.js"></script>  <!-- https://github.com/blueimp/JavaScript-Load-Image -->
-    <script src="js/bootstrap-image-gallery.min.js"></script>  <!-- https://github.com/blueimp/Bootstrap-Image-Gallery -->
-    <script src="js/colorbox.js"></script>  <!-- http://www.jacklmoore.com/colorbox   https://github.com/jackmoore/colorbox -->
-    <script src="js/timeliner.min.js"></script>  <!-- http://www.technotarek.com/timeliner/  https://github.com/technotarek/timeliner -->
-    <script>
-        $(document).ready(function() {
-            $.timeliner({
-                //startOpen:'#2011EX'
-            });
-            // Colorbox Modal
-            $(".CBmodal").colorbox();
-        });
-    </script>
-    <script src="js/main.js"></script>
-
-</body>
-
+    <!-- JQUERY -->
+    <script src="js/jquery.min.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- SCRIPTS -->
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
