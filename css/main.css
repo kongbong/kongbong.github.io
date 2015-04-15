@@ -221,9 +221,13 @@ CONTACT
   font-size: 1.5em;
   font-weight: 700;
   opacity: 0.9;
+  color: #000;
 }
 .contact-item .title.only{
-  margin-top: 10px;
+  margin-top: 10px;  
+}
+.contact-item .title.only > a{  
+  color: #000;
 }
 .contact-item .description{
   width: 80%;
@@ -231,6 +235,10 @@ CONTACT
   font-size: 1.2em;
   opacity: 0.7;
 }
+.contact-item .description > a{  
+  color: #000;
+}
+
 /*******************************************
 SKILLS
 *******************************************/
